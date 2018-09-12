@@ -1,0 +1,29 @@
+doctype
+html
+  head
+    link(rel="stylesheet", href="/css/main.css")
+    script(src="/js/main.js")
+  body
+    h1 first tab
+    .js-tab-el(aria-label="group1")
+      ul(role="tablist")
+        li#tab1.js-tab(role="tab" aria-controls="tab1-contents") tab1
+        li#tab2.js-tab(role="tab" aria-controls="tab2-contents") tab2
+        li#tab3.js-tab(role="tab" aria-controls="tab3-contents") tab3
+        li#tab4.js-tab(role="tab" aria-controls="tab4-contents") tab4
+      div#tab1-contents.js-tab-contents(role="tabpanel" aria-labelledby="tab1") tab1 contents
+      div#tab2-contents.js-tab-contents(role="tabpanel" aria-labelledby="tab2") tab2 contents
+      div#tab3-contents.js-tab-contents(role="tabpanel" aria-labelledby="tab3") tab3 contents
+      div#tab4-contents.js-tab-contents(role="tabpanel" aria-labelledby="tab4") tab4 contents
+
+    h1 second tab
+    .js-tab-el(aria-label="group2")
+      ul(role="tablist")
+        li#tab5.js-tab(role="tab" aria-controls="tab5-contents") tab5
+        li#tab6.js-tab(role="tab" aria-controls="tab6-contents") tab6
+        li#tab7.js-tab(role="tab" aria-controls="tab7-contents") tab7
+        li#tab8.js-tab(role="tab" aria-controls="tab8-contents") tab8
+      div#tab5-contents.js-tab-contents(role="tabpanel" aria-labelledby="tab5") tab5 contents
+      div#tab6-contents.js-tab-contents(role="tabpanel" aria-labelledby="tab6") tab6 contents
+      div#tab7-contents.js-tab-contents(role="tabpanel" aria-labelledby="tab7") tab7 contents
+      div#tab8-contents.js-tab-contents(role="tabpanel" aria-labelledby="tab8") tab8 contents
