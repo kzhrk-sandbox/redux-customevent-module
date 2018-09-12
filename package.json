@@ -10,7 +10,8 @@
     "webpack:dev": "webpack -w & webpack-serve",
     "webpack:pro": "webpack --display-used-exports",
     "test": "NODE_ENV=test mocha --compilers js:@babel/register --recursive $(find test -name '*.spec.js')",
-    "eslint": "eslint --fix --ext .js ./src webpack.config.js"
+    "eslint": "eslint --fix --ext .js ./src webpack.config.js",
+    "deploy": "gh-pages -b gh-pages -d public"
   },
   "author": "kzhrk",
   "devDependencies": {
@@ -33,6 +34,7 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "redux": "^4.0.0"
   }
 }
